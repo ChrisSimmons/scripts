@@ -2,6 +2,9 @@
 # Full bootstrap process
 # $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/full-bootstrap.sh)
 
+# Pull trusted SSH keys
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/ssh-import-id-gh-chris-simmons.sh)
+
 # Tools are required
 source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/install-tools.sh)
 
