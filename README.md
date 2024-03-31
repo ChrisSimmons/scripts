@@ -13,3 +13,11 @@ Some systems don't seem to honor this, in which case you can use a subshell:
 ``` bash
 curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/hello-world.sh | bash
 ```
+
+## QUICK BOOTSTRAP
+
+In most cases, you'll use this repo to bootstrap your login on a machine once.  The full/all-in-one script for this is `full-bootstrap.sh`.  Run it like so:
+
+``` bash
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/full-bootstrap.sh)
+```
