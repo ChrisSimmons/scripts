@@ -5,3 +5,4 @@
 echo "Setting up yadm for dotfiles"
 yadm clone git@github.com:ChrisSimmons/dotfiles.git
 yadm status
+yadm alt
