@@ -14,6 +14,10 @@ Some systems don't seem to honor this, in which case you can use a subshell:
 curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/hello-world.sh | bash
 ```
 
+## Idempotency
+
+An important tenet for these scripts is that they are idempotent.  Feel secure knowing you can run these over and over.  The only call-out here is the SSH key generation (`generate-ssh-key.sh`).  In this case it is left to an interactive choice of whether to overwrite the current key or not.  Overwriting or not overwriting and the consequences thereof are left up to the caller.
+
 ## QUICK BOOTSTRAP
 
 In most cases, you'll use this repo to bootstrap your login on a machine once.  The full/all-in-one script for this is `full-bootstrap.sh`.  Run it like so:
