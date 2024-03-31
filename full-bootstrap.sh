@@ -16,3 +16,6 @@ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrap
 
 # Logout of GitHub CLI
 source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/gh-auth-logout.sh)
+
+# Add GitHub fingerprints to known_hosts
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/github-fingerprints-to-known-hosts.sh)
