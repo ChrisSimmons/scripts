@@ -2,6 +2,9 @@
 # Full bootstrap process
 # $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/full-bootstrap.sh)
 
+# Add self to sudoers
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/add-self-to-sudoers.sh)
+
 # Pull trusted SSH keys
 source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/ssh-import-id-gh-chris-simmons.sh)
 
