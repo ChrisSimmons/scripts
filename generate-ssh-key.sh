@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Re-generate the SSH key
+# Generate the SSH key
 # $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/generate-ssh-key.sh)
 
 SSH_KEY_TITLE="$USER@$HOSTNAME (`date +%s`)"
