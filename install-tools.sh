@@ -2,11 +2,17 @@
 # Install required tools
 # $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/install-tools.sh)
 
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+
 echo "Updating apt ..."
 sudo apt update
 
 echo "Installing git ..."
 sudo apt install git -y
+
+echo "Installing git-lfs ..."
+sudo apt install git-lfs
+git lfs install
 
 echo "Installing yadm ..."
 sudo apt install yadm -y
