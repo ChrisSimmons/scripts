@@ -4,6 +4,8 @@
 # 
 # $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/github-fingerprints-to-known-hosts.sh)
 
+# Adapted from:
+# https://serverfault.com/a/971922
 add_fingerprint () {
   if ! grep "$1" ~/.ssh/known_hosts > /dev/null
   then
