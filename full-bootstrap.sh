@@ -19,3 +19,6 @@ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrap
 
 # Add GitHub fingerprints to known_hosts
 source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/github-fingerprints-to-known-hosts.sh)
+
+# yadm
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/yadm.sh)
