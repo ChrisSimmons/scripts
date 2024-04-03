@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Full bootstrap process
-# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/full-bootstrap.sh)
+# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/quick-boostrap.sh)
 
 # Add self to sudoers
 source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/add-self-to-sudoers.sh)

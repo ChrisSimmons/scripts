@@ -20,8 +20,18 @@ An important tenet for these scripts is that they are idempotent.  Feel secure k
 
 ## QUICK BOOTSTRAP
 
-In most cases, you'll use this repo to bootstrap your login on a machine once.  The full/all-in-one script for this is `full-bootstrap.sh`.  Run it like so:
+In most cases, you'll use this repo to bootstrap your login on a machine once.  The full/all-in-one script for this is `quick-boostrap.sh`.  Run it like so:
 
 ``` bash
-source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/full-bootstrap.sh)
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/quick-boostrap.sh)
+```
+
+## Additional scripts
+
+Additional scripts (not included in the QUICK BOOTSTRAP)
+
+Install Docker:
+
+``` bash
+curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/install-docker.sh | bash
 ```
