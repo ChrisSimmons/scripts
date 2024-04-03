@@ -23,7 +23,7 @@ An important tenet for these scripts is that they are idempotent.  Feel secure k
 In most cases, you'll use this repo to bootstrap your login on a machine once.  The full/all-in-one script for this is `quick-boostrap.sh`.  Run it like so:
 
 ``` bash
-source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/quick-boostrap.sh)
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/quick-bootstrap.sh)
 ```
 
 ## Additional scripts
