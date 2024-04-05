@@ -35,3 +35,9 @@ Install Docker:
 ``` bash
 curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/install-docker.sh | bash
 ```
+
+Deactivate resolved:
+
+``` bash
+curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/deactivate-resolved.sh | bash
+```
