@@ -33,11 +33,11 @@ Additional scripts (not included in the QUICK BOOTSTRAP)
 Install Docker:
 
 ``` bash
-curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/install-docker.sh | bash
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/install-docker.sh)
 ```
 
 Deactivate resolved:
 
 ``` bash
-curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/deactivate-resolved.sh | bash
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/deactivate-resolved.sh)
 ```
