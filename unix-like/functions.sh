@@ -9,7 +9,7 @@ unix_time() {
 
 # https://unix.stackexchange.com/a/201744/232096
 first_word() {
-  echo ${$1%% *}
+  echo ${1%% *}
 }
 
 # https://unix.stackexchange.com/a/6348/232096
