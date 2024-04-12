@@ -4,4 +4,6 @@
 
 hello_world() {
   echo "Hello world!"
+  YYY="yyy"
+  export YYY
 }
