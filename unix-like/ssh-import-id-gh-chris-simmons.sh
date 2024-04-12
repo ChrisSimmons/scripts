@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Pull SSH keys from trusted sources
-# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/ssh-import-id-gh-chris-simmons.sh)
+# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/ssh-import-id-gh-chris-simmons.sh)
 
 # See:
 # https://launchpad.net/ssh-import-id

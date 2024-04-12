@@ -2,7 +2,7 @@
 # Add GitHub's SSH key fingerprints to known_hosts
 # Worst-case if these expire then you'll get asked the next time you pull from GitHub, at which time the new key will be added to known_hosts.
 # 
-# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/github-fingerprints-to-known-hosts.sh)
+# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/github-fingerprints-to-known-hosts.sh)
 
 # Adapted from:
 # https://serverfault.com/a/971922

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Install Docker
-# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/install-docker.sh)
+# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/install-docker.sh)
 # Note we don't make this a part of the full bootstrap as Docker is not going to be needed on all machines.  Most, but not all.
 
 # https://docs.docker.com/engine/install/ubuntu/

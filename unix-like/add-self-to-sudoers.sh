@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Add self to sudoers and lift password requirement
-# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/add-self-to-sudoers.sh)
+# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/add-self-to-sudoers.sh)
 
 # Configure to allow $USER to sudo without password
 export SUDOERS_NO_PASSWORD=/etc/sudoers.d/$USER
