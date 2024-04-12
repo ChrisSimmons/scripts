@@ -6,18 +6,17 @@ case $OS_FIRST in
 
   DEBIAN)
     echo "This is Debian"
-    sudo apt-get install neovim python3-neovim
+    sudo apt-get --assume-yes install neovim python3-neovim
     ;;
 
   UBUNTU)
     echo "Installing neovim for Ubuntu"
     # Neovim
     # https://github.com/neovim/neovim/blob/master/INSTALL.md#ubuntu
-    sudo apt-get install software-properties-common
-    #sudo apt-get install python-software-properties
+    sudo apt-get --assume-yes install software-properties-common
     sudo add-apt-repository ppa:neovim-ppa/stable
-    sudo apt-get update
-    sudo apt-get install neovim
+    sudo apt-get --assume-yes update
+    sudo apt-get --assume-yes install neovim
     ;;
 
   DARWIN)
