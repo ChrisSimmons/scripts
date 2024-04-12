@@ -6,6 +6,7 @@ case $OS_FIRST in
 
   DEBIAN)
     echo "This is Debian"
+    sudo apt-get install neovim python3-neovim
     ;;
 
   UBUNTU)
