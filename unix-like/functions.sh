@@ -7,6 +7,11 @@ unix_time() {
   echo $(date +%s)
 }
 
+# https://unix.stackexchange.com/a/201744/232096
+first_word() {
+  echo ${$1%% *}
+}
+
 # https://unix.stackexchange.com/a/6348/232096
 establish_os_ver() {
   if [ -f /etc/os-release ]; then
@@ -38,7 +43,7 @@ establish_os_ver() {
       VALUES_FOUND_IN="uname"
   fi
 
-  OS_FIRST=${OS%% *}
+  OS_FIRST=$(first_word $OS)
 
   # TODO - Generlize the distro:
   # Ubuntu
