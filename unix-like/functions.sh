@@ -7,12 +7,16 @@ unix_time() {
   echo $(date +%s)
 }
 
-# https://unix.stackexchange.com/a/201744/232096
+# https://unix.stackexchange.com/a/201744
 first_word() {
   echo ${1%% *}
 }
 
-# https://unix.stackexchange.com/a/6348/232096
+# https://unix.stackexchange.com/a/6348
+# Provides:
+# - OS - Operating system name
+# - VER - Operating system version
+# - OS_FIRST - Upper-case first word of OS, usually the name of the distro (e.g. "DEBIAN", "UBUNTU")
 establish_os_ver() {
   if [ -f /etc/os-release ]; then
       # freedesktop.org and systemd
@@ -43,8 +47,7 @@ establish_os_ver() {
       VALUES_FOUND_IN="uname"
   fi
 
-  OS_FIRST=$(first_word $OS)
-  OS_FIRST=${OS_FIRST^^}
+  OS_FIRST=$(first_word $OS | tr '[:lower:]' '[:upper:]')
 
   # TODO - Generlize the distro:
   # Ubuntu
