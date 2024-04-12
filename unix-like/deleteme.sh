@@ -7,3 +7,4 @@ establish_os_ver
 
 echo "OS: $OS"
 echo "VER: $VER"
+echo "VALUES_FOUND_IN: $VALUES_FOUND_IN"

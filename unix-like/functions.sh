@@ -15,28 +15,27 @@ establish_os_ver() {
       . /etc/os-release
       OS=$NAME
       VER=$VERSION_ID
+      VALUES_FOUND_IN="/etc/os-release"
   elif type lsb_release >/dev/null 2>&1; then
       # linuxbase.org
       OS=$(lsb_release -si)
       VER=$(lsb_release -sr)
+      VALUES_FOUND_IN="lsb_release"
   elif [ -f /etc/lsb-release ]; then
       # For some versions of Debian/Ubuntu without lsb_release command
       . /etc/lsb-release
       OS=$DISTRIB_ID
       VER=$DISTRIB_RELEASE
+      VALUES_FOUND_IN="/etc/lsb-release"
   elif [ -f /etc/debian_version ]; then
       # Older Debian/Ubuntu/etc.
       OS=Debian
       VER=$(cat /etc/debian_version)
-  elif [ -f /etc/SuSe-release ]; then
-      # Older SuSE/etc.
-      ...
-  elif [ -f /etc/redhat-release ]; then
-      # Older Red Hat, CentOS, etc.
-      ...
+      VALUES_FOUND_IN="/etc/debian_version"
   else
       # Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
       OS=$(uname -s)
       VER=$(uname -r)
+      VALUES_FOUND_IN="uname"
   fi
 }
