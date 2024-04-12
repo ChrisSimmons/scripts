@@ -48,9 +48,4 @@ establish_os_ver() {
   fi
 
   OS_FIRST=$(first_word $OS | tr '[:lower:]' '[:upper:]')
-
-  # TODO - Generlize the distro:
-  # Ubuntu
-  # Debian
-  # Darwin
 }
