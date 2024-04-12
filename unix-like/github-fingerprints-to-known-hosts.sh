@@ -4,12 +4,16 @@
 # 
 # $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/github-fingerprints-to-known-hosts.sh)
 
+KNOWN_HOSTS_FILE="~/.ssh/known_hosts"
+
+touch $KNOWN_HOSTS_FILE
+
 # Adapted from:
 # https://serverfault.com/a/971922
 add_fingerprint () {
-  if ! grep "$1" ~/.ssh/known_hosts > /dev/null
+  if ! grep "$1" $KNOWN_HOSTS_FILE > /dev/null
   then
-      echo "$1" >> ~/.ssh/known_hosts
+      echo "$1" >> $KNOWN_HOSTS_FILE
   else
     echo "Fingerprint already known: $1"
   fi
