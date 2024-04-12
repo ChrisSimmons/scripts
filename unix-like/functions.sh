@@ -38,7 +38,10 @@ establish_os_ver() {
       VALUES_FOUND_IN="uname"
   fi
 
+  OS_FIRST=${OS%% *}
+
   # TODO - Generlize the distro:
   # Ubuntu
   # Debian
+  # Darwin
 }
