@@ -44,6 +44,7 @@ establish_os_ver() {
   fi
 
   OS_FIRST=$(first_word $OS)
+  OS_FIRST=${OS_FIRST^^}
 
   # TODO - Generlize the distro:
   # Ubuntu
