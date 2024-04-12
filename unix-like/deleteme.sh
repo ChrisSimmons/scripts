@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # TODO - DELETE THIS BEFORE RELEASE
 
-source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/generalize/unix-like/functions.sh?xxxx=$(date +%s))
+# Must use this syntax for Mac OS because of the version of bash used
+# https://superuser.com/a/255278
+source /dev/stdin <<< "$(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/generalize/unix-like/functions.sh?xxxx=$(date +%s))"
 
 establish_os_ver
 

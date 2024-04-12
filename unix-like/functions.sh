@@ -37,4 +37,8 @@ establish_os_ver() {
       VER=$(uname -r)
       VALUES_FOUND_IN="uname"
   fi
+
+  # TODO - Generlize the distro:
+  # Ubuntu
+  # Debian
 }

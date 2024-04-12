@@ -16,6 +16,12 @@ Some systems don't seem to honor this, in which case you can use a subshell:
 curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/hello-world.sh | bash
 ```
 
+For Mac OS, which uses an earlier version of bash, you can use this syntax (see comments on [this superuser.com answer](https://superuser.com/a/255278)):
+
+``` bash
+source /dev/stdin <<< "$(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/hello-world.sh)"
+```
+
 ## QUICK BOOTSTRAP
 
 In most cases, you'll use this repo to bootstrap your login on a machine once.  The full/all-in-one script for this is `quick-boostrap.sh`.  Run it like so:
