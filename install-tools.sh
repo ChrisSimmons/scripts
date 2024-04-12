@@ -32,3 +32,12 @@ sudo mkdir -p -m 755 /etc/apt/keyrings && wget -qO- https://cli.github.com/packa
 
 echo "Installing net-tools ..."
 sudo apt install net-tools -y
+
+# TODO - This only works with Ubuntu
+# # Neovim
+# # https://github.com/neovim/neovim/blob/master/INSTALL.md#ubuntu
+# sudo apt-get install software-properties-common
+# #sudo apt-get install python-software-properties
+# sudo add-apt-repository ppa:neovim-ppa/stable
+# sudo apt-get update
+# sudo apt-get install neovim
