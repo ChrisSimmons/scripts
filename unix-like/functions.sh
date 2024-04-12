@@ -3,7 +3,7 @@
 # $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/functions.sh)
 
 hello_world() {
-  echo "Hello world!"
+  echo "Hello world!XXXXXX"
   YYY="yyy"
   export YYY
 }
