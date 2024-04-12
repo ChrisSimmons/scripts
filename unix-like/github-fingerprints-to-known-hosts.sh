@@ -4,7 +4,7 @@
 # 
 # $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/github-fingerprints-to-known-hosts.sh)
 
-KNOWN_HOSTS_FILE="~/.ssh/known_hosts"
+KNOWN_HOSTS_FILE="$HOME/.ssh/known_hosts"
 
 touch $KNOWN_HOSTS_FILE
 
