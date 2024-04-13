@@ -2,6 +2,10 @@
 # Install neovim
 # $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/install-neovim.sh)
 
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/functions.sh)
+
+establish_os_ver
+
 case $OS_FIRST in
 
   DEBIAN)
