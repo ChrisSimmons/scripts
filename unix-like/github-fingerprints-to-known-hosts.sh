@@ -2,14 +2,18 @@
 # Add GitHub's SSH key fingerprints to known_hosts
 # Worst-case if these expire then you'll get asked the next time you pull from GitHub, at which time the new key will be added to known_hosts.
 # 
-# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/system-bootstrapping/main/github-fingerprints-to-known-hosts.sh)
+# $ source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/github-fingerprints-to-known-hosts.sh)
+
+KNOWN_HOSTS_FILE="$HOME/.ssh/known_hosts"
+
+touch $KNOWN_HOSTS_FILE
 
 # Adapted from:
 # https://serverfault.com/a/971922
 add_fingerprint () {
-  if ! grep "$1" ~/.ssh/known_hosts > /dev/null
+  if ! grep "$1" $KNOWN_HOSTS_FILE > /dev/null
   then
-      echo "$1" >> ~/.ssh/known_hosts
+      echo "$1" >> $KNOWN_HOSTS_FILE
   else
     echo "Fingerprint already known: $1"
   fi
