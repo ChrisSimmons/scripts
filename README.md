@@ -30,6 +30,16 @@ In most cases, you'll use this repo to bootstrap your login on a machine once.  
 source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/quick-bootstrap.sh)
 ```
 
+## Functions
+
+- Bash functions are provided in `unix-like/functions.sh` and can be `sourced` in files like:
+
+``` bash
+# ...
+source <(curl -s https://raw.githubusercontent.com/ChrisSimmons/scripts/main/unix-like/functions.sh)
+# ...
+```
+
 ## Additional scripts
 
 Additional scripts (not included in the QUICK BOOTSTRAP)
