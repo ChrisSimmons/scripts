@@ -29,4 +29,6 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 
 # Verify
-docker run hello-world
+sudo docker run hello-world
+
+echo "We ran \"sudo docker run hello-world\". You should be able run docker without sudo when you next logout and login."
