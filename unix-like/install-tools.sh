@@ -14,6 +14,9 @@ echo "Installing git-lfs ..."
 sudo apt install git-lfs
 git lfs install
 
+echo "Installing gh (GitHub CLI) ..."
+sudo apt install gh -y
+
 echo "Installing yadm ..."
 sudo apt install yadm -y
 
